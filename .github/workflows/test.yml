@@ -1,0 +1,41 @@
+name: Test Documentation Links
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+jobs:
+  test-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for broken markdown links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          config-file: '.github/workflows/markdown-link-check-config.json'
+          
+  test-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify required files exist
+        run: |
+          echo "Checking for required files..."
+          test -f index.html || (echo "ERROR: index.html not found" && exit 1)
+          test -f README.md || (echo "ERROR: README.md not found" && exit 1)
+          test -f _sidebar.md || (echo "ERROR: _sidebar.md not found" && exit 1)
+          test -f .nojekyll || (echo "ERROR: .nojekyll not found" && exit 1)
+          echo "All required files found!"
+          
+      - name: List all markdown files
+        run: |
+          echo "Documentation files:"
+          find . -name "*.md" -type f | sort

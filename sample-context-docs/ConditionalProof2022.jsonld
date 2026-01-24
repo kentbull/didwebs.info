@@ -1,0 +1,139 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "sec": "https://w3id.org/security#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "proof": {
+      "@id": "sec:proof",
+      "@type": "@id",
+      "@container": "@graph"
+    },
+    "ConditionalProof2022": {
+      "@id": "sec:ConditionalProof2022",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "controller": {
+          "@id": "sec:controller",
+          "@type": "@id"
+        },
+        "conditionThreshold": {
+          "@id": "sec:conditionThreshold",
+          "@context": {
+            "@version": 1.1,
+            "@protected": true,
+            "threshold": "sec:threshold",
+            "conditionSet": {
+              "@id": "sec:conditionSet",
+              "@type": "@id",
+              "@container": "@set"
+            }
+          }
+        },
+        "conditionWeightedThreshold": {
+          "@id": "sec:conditionWeightedThreshold",
+          "@context": {
+            "@version": 1.1,
+            "@protected": true,
+            "threshold": "sec:threshold",
+            "conditionWeightedSet": {
+              "@id": "sec:conditionWeightedSet",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "weight": "sec:weight"
+          }
+        },
+        "conditionAnd": {
+          "@id": "sec:conditionAnd",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "conditionOr": {
+          "@id": "sec:conditionOr",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "conditionDelegated": {
+          "@id": "sec:conditionDelegated",
+          "@type": "@id"
+        },
+        "relationshipParent": {
+          "@id": "sec:relationshipParent",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "relationshipChild": {
+          "@id": "sec:relationshipChild",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "relationshipSibling": {
+          "@id": "sec:relationshipSibling",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "verificationMethod": {
+          "@id": "sec:verificationMethod",
+          "@type": "@id"
+        },
+        "proofPurpose": {
+          "@id": "sec:proofPurpose",
+          "@type": "@vocab",
+          "@context": {
+            "@version": 1.1,
+            "@protected": true,
+            "id": "@id",
+            "type": "@type",
+            "assertionMethod": {
+              "@id": "sec:assertionMethod",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "authentication": {
+              "@id": "sec:authenticationMethod",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "capabilityInvocation": {
+              "@id": "sec:capabilityInvocationMethod",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "capabilityDelegation": {
+              "@id": "sec:capabilityDelegationMethod",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "keyAgreement": {
+              "@id": "sec:keyAgreementMethod",
+              "@type": "@id",
+              "@container": "@set"
+            }
+          }
+        },
+        "created": {
+          "@id": "http://purl.org/dc/terms/created",
+          "@type": "xsd:dateTime"
+        },
+        "expires": {
+          "@id": "sec:expiration",
+          "@type": "xsd:dateTime"
+        },
+        "revoked": {
+          "@id": "sec:revoked",
+          "@type": "xsd:dateTime"
+        },
+        "challenge": "sec:challenge",
+        "domain": "sec:domain",
+        "nonce": "sec:nonce",
+        "proofValue": "sec:proofValue"
+      }
+    }
+  }
+}
