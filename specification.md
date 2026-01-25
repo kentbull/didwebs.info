@@ -91,7 +91,7 @@ aid = 1*(ALPHA / DIGIT / "+" / "/" / "=")
 ```
 did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP
 did:webs:example.com%3A3000:users:bob:ED1e8pD24aqd0dCZTQHaGpfcluPFD2ajGIY3ARgE5Yvr
-did:webs:hook.testnet.gleif.org%3A7702:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye
+did:webs:hook.testnet.gleif.org%3A7701:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye
 ```
 
 ### Resolution

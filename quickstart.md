@@ -20,7 +20,7 @@ Try these working `did:webs` DIDs on the GLEIF testnet:
 
 **Example 1:**
 ```
-did:webs:hook.testnet.gleif.org%3A7702:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye
+did:webs:hook.testnet.gleif.org%3A7701:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye
 ```
 
 **Example 2:**

@@ -13,7 +13,7 @@ A JSON-LD context for Conditional Proof 2022.
 **Access URLs:**
 
 - **Local**: http://localhost:3000/sample-context-docs/ConditionalProof2022.jsonld
-- **GitHub Pages**: https://kentbull.github.io/didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+- **GitHub Pages**: https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
 
 **Usage in code:**
 
@@ -21,7 +21,7 @@ A JSON-LD context for Conditional Proof 2022.
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://kentbull.github.io/didwebs.info/sample-context-docs/ConditionalProof2022.jsonld"
+    "https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld"
   ],
   "type": ["VerifiableCredential"],
   ...
@@ -32,10 +32,10 @@ A JSON-LD context for Conditional Proof 2022.
 
 ```bash
 # Download the context file
-curl -O https://kentbull.github.io/didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+curl -O https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
 
 # Or with wget
-wget https://kentbull.github.io/didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+wget https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
 ```
 
 ## Adding New Resources
@@ -61,7 +61,7 @@ To add new static resources:
 
 3. **Access via URL**:
    ```
-   https://kentbull.github.io/didwebs.info/sample-context-docs/my-context.jsonld
+   https://didwebs.info/sample-context-docs/my-context.jsonld
    ```
 
 ## MIME Types
@@ -118,7 +118,7 @@ curl -I http://localhost:3000/sample-context-docs/ConditionalProof2022.jsonld
 Once deployed, static resources are available at:
 
 ```
-https://kentbull.github.io/didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
 ```
 
 These URLs can be used in:
