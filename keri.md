@@ -11,6 +11,37 @@ KERI provides the cryptographic foundation for `did:webs` security. This page ex
 - How `did:webs` uses KERI
 - The `keri.cesr` file format
 
+## Integration with did:webs
+
+### AID as DID Component
+
+The KERI AID is the final component of the `did:webs` DID:
+
+```
+did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP
+                            └─────────────────┬────────────────────┘
+                                              AID
+```
+
+### DID Document Generation
+
+The DID document is generated from the current key state:
+
+1. Walk the KEL
+2. Calculate current key state
+3. Map keys to verification methods
+4. Map witnesses to services
+5. Include designated aliases
+
+### Verification
+
+Resolvers MUST verify the `keri.cesr` file:
+
+1. Fetch `keri.cesr`
+2. Verify KERI event stream
+3. Ensure DID document matches key state
+4. Return verified DID document
+
 ## What is KERI?
 
 KERI (Key Event Receipt Infrastructure) is a protocol for managing cryptographic keys with a verifiable history. It provides:
@@ -21,7 +52,7 @@ KERI (Key Event Receipt Infrastructure) is a protocol for managing cryptographic
 - **Witnesses**: Distributed consensus without blockchain
 - **Delegated Identifiers**: Hierarchical key management
 
-Learn more at [keri.one](https://keri.one) and the [KERI Specification](https://trustoverip.github.io/tswg-keri-specification/).
+Learn more at [keri.one](https://keri.one) and the [KERI Specification](https://trustoverip.github.io/kswg-keri-specification/).
 
 ## Key Concepts
 
@@ -60,6 +91,9 @@ The current key state is calculated by walking the KEL:
 Witnesses are KERI nodes that:
 - Observe and receipt key events
 - Provide distributed consensus
+
+### Watchers 
+
 - Detect duplicity (conflicting events)
 - Improve availability
 
@@ -180,7 +214,7 @@ A CESR stream contains:
 - `-VAS`: Witness receipt attachment
 - `-IAB`: Seal attachment
 
-Learn more in the [CESR Specification](https://trustoverip.github.io/tswg-cesr-specification/).
+Learn more in the [CESR Specification](https://trustoverip.github.io/kswg-cesr-specification/).
 
 ## The keri.cesr File
 
@@ -256,7 +290,6 @@ Witnesses provide distributed consensus:
 
 - **Observe**: Watch for key events
 - **Receipt**: Sign receipts for valid events
-- **Detect**: Identify conflicting events (duplicity)
 - **Publish**: Make receipts available
 
 ### Witness Threshold
@@ -279,6 +312,13 @@ Witnesses sign receipts that are included in the CESR stream:
 ```
 -VAS-GAB0AAAAAAAAAAAAAAAAAAAAAABEPrcZNm-qeuxdjogRGLJJcGEBTUuy-jfJPTAzZhxdKHf
 ```
+
+## Watchers 
+
+Watchers are run by verifiers, or those who want to ensure the identities they interact with are telling the truth by saying the same thing, consistently, over time.
+
+### Watcher Roles
+- **Detect**: Identify conflicting events (duplicity)
 
 ## Delegated Identifiers
 
@@ -319,37 +359,6 @@ Verifiers must check both:
 1. Delegatee's KEL
 2. Delegator's approval in their KEL
 
-## Integration with did:webs
-
-### AID as DID Component
-
-The KERI AID is the final component of the `did:webs` DID:
-
-```
-did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP
-                            └─────────────────┬────────────────────┘
-                                              AID
-```
-
-### DID Document Generation
-
-The DID document is generated from the current key state:
-
-1. Walk the KEL
-2. Calculate current key state
-3. Map keys to verification methods
-4. Map witnesses to services
-5. Include designated aliases
-
-### Verification
-
-Resolvers MUST verify the `keri.cesr` file:
-
-1. Fetch `keri.cesr`
-2. Verify KERI event stream
-3. Ensure DID document matches key state
-4. Return verified DID document
-
 ## Security Properties
 
 KERI provides `did:webs` with:
@@ -365,4 +374,4 @@ KERI provides `did:webs` with:
 - [DID Documents](diddocuments.md) - Learn about DID document generation
 - [Core Characteristics](core.md) - Understand core features
 - [Specification](specification.md) - Read the full specification
-- [KERI Specification](https://trustoverip.github.io/tswg-keri-specification/) - Deep dive into KERI
+- [KERI Specification](https://trustoverip.github.io/kswg-keri-specification/) - Deep dive into KERI

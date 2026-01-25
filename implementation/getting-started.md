@@ -104,6 +104,8 @@ The cryptographic proof chain containing:
 
 ## Step-by-Step Implementation
 
+You can refer to the workflow script in `did-webs-resolver/local/did_webs_workflow.sh` or roll your own by following along below.
+
 ### Step 1: Set Up KERI Infrastructure
 
 **Start Witness Network (for development):**
@@ -299,29 +301,6 @@ kli vc create \
 
 **Regenerate artifacts** to include the alsoKnownAs field.
 
-### Multi-Signature Identifiers
-
-Create a multi-sig identifier:
-
-```bash
-# Participant 1
-kli incept \
-  --name participant1 \
-  --alias multisig \
-  --file ./config/multisig-config.json
-
-# Participant 2
-kli incept \
-  --name participant2 \
-  --alias multisig \
-  --file ./config/multisig-config.json
-
-# Join the multisig group
-kli multisig join \
-  --name participant1 \
-  --alias multisig \
-  --group-name my-multisig
-```
 
 ### Delegated Identifiers
 
@@ -410,29 +389,6 @@ pytest tests/dws/core/test_resolving.py
 pytest --cov=src --cov-report=html
 ```
 
-### Integration Tests
-
-```bash
-# Test against live deployment
-pytest tests/integration/
-
-# Test with witnesses
-pytest tests/integration/test_witnesses.py
-```
-
-### Manual Testing
-
-```bash
-# Test DID format
-echo "did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP" | \
-  grep -E '^did:webs:[a-zA-Z0-9.-]+(%3[Aa][0-9]+)?(:[a-zA-Z0-9._~-]+)*:[A-Za-z0-9+/=]+$'
-
-# Test HTTPS transformation
-curl -I https://example.com/alice/EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP/did.json
-
-# Test resolution
-dws did webs resolve --did "did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP"
-```
 
 ## Deployment
 
@@ -440,25 +396,6 @@ dws did webs resolve --did "did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4q
 
 ```bash
 docker compose up
-```
-
-### Staging
-
-```bash
-docker compose -f docker-compose.staging.yml up -d
-```
-
-### Production
-
-```bash
-# Use production configuration
-docker compose -f docker-compose.prod.yml up -d
-
-# Or deploy to cloud
-# - AWS ECS
-# - Google Cloud Run
-# - Azure Container Instances
-# - Kubernetes
 ```
 
 ## Troubleshooting

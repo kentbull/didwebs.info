@@ -43,7 +43,6 @@ python3 -m http.server 3000
 # Visit http://localhost:3000
 ```
 
-
 ## Contributing
 
 Contributions are welcome! 

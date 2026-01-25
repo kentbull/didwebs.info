@@ -229,6 +229,8 @@ This includes:
 - **Rotation events** (`rot`) - If keys have been rotated
 - **Interaction events** (`ixn`) - Non-key-state changes
 
+See the [keri.cesr file in the README](README.md#kericesr) for a more in depth example of what a valid keri.cesr stream looks like, with whitespace and annotations added for readability..
+
 ## Next Steps
 
 Now that you have a working `did:webs` DID:

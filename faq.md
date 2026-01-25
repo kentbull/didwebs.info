@@ -236,44 +236,6 @@ Use `did:webs` for public, discoverable identifiers.
 Use blockchain DIDs if you need ledger-based consensus.  
 Use `did:webs` for web-scale, cost-effective identifiers.
 
-## Troubleshooting
-
-### My DID won't resolve
-
-Check:
-1. ✅ DID format is correct (use ABNF grammar)
-2. ✅ Port separator is URL-encoded (`%3A` not `:`)
-3. ✅ Files are accessible via HTTPS
-4. ✅ `did.json` and `keri.cesr` are in correct location
-5. ✅ KERI event stream is valid
-
-### Verification fails
-
-Check:
-1. ✅ KERI event stream matches DID document
-2. ✅ Signatures are valid
-3. ✅ Sequence numbers are correct
-4. ✅ Witness receipts are present (if using witnesses)
-5. ✅ No duplicity detected
-
-### How do I debug resolution?
-
-Use verbose mode in the reference implementation:
-
-```bash
-dws did webs resolve \
-  --name my-keystore \
-  --did "did:webs:example.com:alice:AID" \
-  --verbose
-```
-
-Or check the raw files:
-
-```bash
-curl https://example.com/alice/AID/did.json
-curl https://example.com/alice/AID/keri.cesr
-```
-
 ## Getting Help
 
 ### Where can I ask questions?

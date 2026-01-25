@@ -117,8 +117,8 @@ did:webs:example.com:alice:EKYGGh-FtAphGmSZbsuBs_t4qpsjYJ2ZqvMKluq9OxmP
 The specification references:
 
 - **W3C DID Core**: [https://www.w3.org/TR/did-core/](https://www.w3.org/TR/did-core/)
-- **KERI Specification**: [https://trustoverip.github.io/tswg-keri-specification/](https://trustoverip.github.io/tswg-keri-specification/)
-- **CESR Specification**: [https://trustoverip.github.io/tswg-cesr-specification/](https://trustoverip.github.io/tswg-cesr-specification/)
+- **KERI Specification**: [https://trustoverip.github.io/kswg-keri-specification/](https://trustoverip.github.io/kswg-keri-specification/)
+- **CESR Specification**: [https://trustoverip.github.io/kswg-cesr-specification/](https://trustoverip.github.io/kswg-cesr-specification/)
 - **did:web Specification**: [https://w3c-ccg.github.io/did-method-web/](https://w3c-ccg.github.io/did-method-web/)
 - **RFC 1035**: Domain Names - Implementation and Specification
 - **RFC 1123**: Requirements for Internet Hosts
@@ -128,7 +128,7 @@ The specification references:
 
 Additional resources:
 
-- **ACDC Specification**: [https://trustoverip.github.io/tswg-acdc-specification/](https://trustoverip.github.io/tswg-acdc-specification/)
+- **ACDC Specification**: [https://trustoverip.github.io/kswg-acdc-specification/](https://trustoverip.github.io/kswg-acdc-specification/)
 - **Universal Resolver**: [https://dev.uniresolver.io/](https://dev.uniresolver.io/)
 - **GLEIF**: [https://www.gleif.org/](https://www.gleif.org/)
 
@@ -154,19 +154,19 @@ The specification is developed openly by the Trust Over IP Foundation. To contri
 
 The Key Event Receipt Infrastructure (KERI) specification defines the cryptographic foundation for `did:webs`.
 
-📄 **[KERI Specification](https://trustoverip.github.io/tswg-keri-specification/)**
+📄 **[KERI Specification](https://trustoverip.github.io/kswg-keri-specification/)**
 
 ### CESR Specification
 
 The Composable Event Streaming Representation (CESR) specification defines the encoding format for KERI events.
 
-📄 **[CESR Specification](https://trustoverip.github.io/tswg-cesr-specification/)**
+📄 **[CESR Specification](https://trustoverip.github.io/kswg-cesr-specification/)**
 
 ### ACDC Specification
 
 The Authentic Chained Data Containers (ACDC) specification defines verifiable credentials that can be anchored to KERI identifiers.
 
-📄 **[ACDC Specification](https://trustoverip.github.io/tswg-acdc-specification/)**
+📄 **[ACDC Specification](https://trustoverip.github.io/kswg-acdc-specification/)**
 
 ### did:web Specification
 

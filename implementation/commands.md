@@ -490,17 +490,6 @@ export DWS_HOST=0.0.0.0
 
 ---
 
-## Exit Codes
-
-- `0`: Success
-- `1`: General error
-- `2`: Invalid arguments
-- `3`: File not found
-- `4`: Network error
-- `5`: Verification error
-
----
-
 ## Examples
 
 ### Complete Workflow
@@ -529,40 +518,6 @@ dws did webs service --name my-keystore --static-files-dir ./output
 
 # 7. Resolve DID
 dws did webs resolve --name my-keystore --did "did:webs:example.com:$AID"
-```
-
----
-
-## Troubleshooting
-
-### Command Not Found
-
-```bash
-# Ensure virtual environment is activated
-source .venv/bin/activate
-
-# Or use full path
-./venv/bin/dws --help
-```
-
-### Permission Denied
-
-```bash
-# Make scripts executable
-chmod +x ./local/did_webs_workflow.sh
-
-# Or run with bash
-bash ./local/did_webs_workflow.sh
-```
-
-### Connection Refused
-
-```bash
-# Check if witnesses are running
-docker compose ps witnesses
-
-# Or start witnesses
-kli witness demo
 ```
 
 ---

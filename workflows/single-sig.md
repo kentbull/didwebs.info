@@ -111,7 +111,12 @@ function check_witnesses() {
 check_witnesses
 ```
 
-This verifies the witness network is accessible before proceeding.
+**Example Output:**
+```
+Witness server is running at http://127.0.0.1:5642/oobi/BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha
+```
+
+This verifies the witness network is accessible before proceeding. The witness responds with its inception event in CESR format.
 
 ### Step 3: Initialize KERI Environment
 
@@ -128,10 +133,17 @@ kli init \
   --config-file "${CTLR_KEYSTORE}"
 ```
 
+**Example Output:**
+```
+KERI Keystore created at: /Users/$USER/.keri/ks/dws-controller
+KERI Database created at: /Users/$USER/.keri/db/dws-controller
+KERI Credential Store created at: /Users/$USER/.keri/reg/dws-controller
+```
+
 **What happens:**
-- Creates keystore at `/usr/local/var/keri/ks/dws-controller` on Unix/Linux or at `/Users/$USER/.keri/ks/dws-controller` on Mac OS.
+- Creates keystore at `/usr/local/var/keri/ks/dws-controller` on Unix/Linux or at `/Users/$USER/.keri/ks/dws-controller` on Mac OS
 - Loads configuration from `./local/config/controller/keri/cf/dws-controller.json`
-- Resolves witness OOBIs
+- Resolves witness OOBIs from configuration
 - No passcode for easy automation
 
 ### Step 4: Create AID (Inception Event)
@@ -157,11 +169,17 @@ kli incept \
 }
 ```
 
-**Output:**
+**Example Output:**
 ```
+Waiting for witness receipts...
 Prefix  EBFn5ge82EQwxp9eeje-UMEXF-v-3dlfbdVMX_PNjSft
 	Public key 1:  DMJqIvb-YCWj7Ad2Hjq8wm0CgZcXTBcQ1Z-PaJtbv6ji
 ```
+
+**What happened:**
+- Witness receipts confirmed (witnesses signed your inception event)
+- Your new AID (identifier prefix) was created: `EBFn5ge82EQwxp9eeje-UMEXF-v-3dlfbdVMX_PNjSft`
+- Your public key is displayed for reference
 
 The `Prefix` is your AID!
 
@@ -215,7 +233,13 @@ kli oobi resolve \
   --oobi "https://weboftrust.github.io/oobi/${DESG_ALIASES_SCHEMA}"
 ```
 
-This resolves the schema from the public WebOfTrust registry.
+**Example Output:**
+```
+Resolved OOBI EN6Oh5XSD5_q2Hgu-aqpdfbVepdpYpFlgz6zvJL5b_r5
+Added schema EN6Oh5XSD5_q2Hgu-aqpdfbVepdpYpFlgz6zvJL5b_r5
+```
+
+This resolves the schema from the public WebOfTrust registry so your keystore knows the structure of designated aliases credentials.
 
 ### Step 8: Create Designated Aliases JSON
 

@@ -88,7 +88,7 @@ KERI (Key Event Receipt Infrastructure) is a protocol for managing cryptographic
 - **Self-Certifying Identifiers** - Identifiers derived from cryptographic keys
 - **Key Event Logs** - Immutable history of all key operations
 - **Pre-Rotation** - Protection against key compromise
-- **Witnesses** - Distributed consensus without blockchain
+- **Witnesses, Watchers, and Observers** - Scalable verification and consensus without blockchain
 - **Delegated Identifiers** - Hierarchical key management
 
 ### How did:webs Uses KERI
@@ -97,7 +97,7 @@ KERI (Key Event Receipt Infrastructure) is a protocol for managing cryptographic
 
 1. **Generate the AID** - The final component of the DID is a KERI AID
 2. **Prove Key History** - The `keri.cesr` file contains the complete key event log
-3. **Verify Updates** - All DID document changes must be authorized by current keys
+3. **Verify Updates** - All designated alias or other DID document changes must be verifiable by current keys
 4. **Detect Tampering** - Any modification to the event log is cryptographically detectable
 5. **Enable Portability** - The same AID can be used across different web locations
 
@@ -124,28 +124,28 @@ Example structure:
 
 ### did:webs vs did:web
 
-| Feature | did:web | did:webs |
-|---------|---------|----------|
-| Web-based publication | ✅ | ✅ |
-| Simple HTTPS transformation | ✅ | ✅ |
-| Cryptographic key history | ❌ | ✅ |
-| Verifiable updates | ❌ | ✅ |
-| Protection against compromise | ❌ | ✅ (pre-rotation) |
-| DID portability | ❌ | ✅ |
-| Trust in web infrastructure | Required | Not required |
-| Additional file required | None | keri.cesr |
+| Feature                       | did:web  | did:webs          |
+|-------------------------------|----------|-------------------|
+| Web-based publication         | ✅       | ✅                |
+| Simple HTTPS transformation   | ✅       | ✅                |
+| Cryptographic key history     | ❌       | ✅                |
+| Verifiable updates            | ❌       | ✅                |
+| Protection against compromise | ❌       | ✅ (pre-rotation) |
+| DID portability               | ❌       | ✅                |
+| Trust in web infrastructure   | Required | Not required      |
+| Additional file required      | None     | keri.cesr         |
 
 ### did:webs vs Blockchain DIDs
 
-| Feature | Blockchain DIDs | did:webs |
-|---------|-----------------|----------|
-| Decentralized trust | ✅ | ✅ |
-| Cryptographic security | ✅ | ✅ |
-| Transaction costs | ❌ (fees) | ✅ (free) |
-| Speed | ❌ (slow) | ✅ (fast) |
-| Regulatory concerns | ❌ (varies) | ✅ (minimal) |
-| Scalability | ❌ (limited) | ✅ (web-scale) |
-| Infrastructure complexity | ❌ (high) | ✅ (low) |
+| Feature                   | Blockchain DIDs  | did:webs       |
+|---------------------------|------------------|----------------|
+| Decentralized trust       | ✅               | ✅             |
+| Cryptographic security    | ✅               | ✅             |
+| Transaction costs         | ❌ (fees)        | ✅ (free)      |
+| Speed                     | ❌ (slow)        | ✅ (fast)      |
+| Regulatory concerns       | ❌ (varies)      | ✅ (minimal)   |
+| Scalability               | ❌ (limited)     | ✅ (web-scale) |
+| Infrastructure complexity | ❌ (high)        | ✅ (low)       |
 
 ## Use Cases
 
@@ -200,7 +200,7 @@ Supply chain participants can use `did:webs` to:
 
 - Users can access the web to fetch DID documents
 - KERI cryptography is sound (Ed25519, etc.)
-- Witnesses (if used) are not all compromised
+- Witnesses, watchers, and observers (if used) are not all compromised
 - Users verify the KERI event stream (not just the DID document)
 
 ### Privacy Considerations
@@ -208,7 +208,6 @@ Supply chain participants can use `did:webs` to:
 - **Publication**: DIDs are public by design
 - **Correlation**: Same AID across locations is intentionally correlatable
 - **Metadata**: Web server logs may reveal access patterns
-- **Witnesses**: May learn about DID updates (if used)
 
 ## Next Steps
 

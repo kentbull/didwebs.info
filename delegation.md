@@ -110,6 +110,8 @@ def gen_delegation_service(hby: habbing.Habery, pre: str, delpre: str):
 
 ## Complete Delegation Workflow
 
+This section is a long guide showing how to set up your own delegated identifier with KERI.
+
 ### Phase 1: Delegator Inception
 
 The delegator creates a normal (non-delegated) identifier:
@@ -275,6 +277,8 @@ A delegated `did:webs` DID document includes both witness services and a delegat
 
 For a concrete example we review the integration test from the did:webs implementation repository, specifically the test at [`test_resolving.py:44`](https://github.com/GLEIF-IT/did-webs-resolver/blob/main/tests/dws/core/test_resolving.py#L44) which demonstrates the complete delegation flow.
 
+The below is a guide through an abbreviated subset of that test to illustrate the general workflow necessary for verification of delegation.
+
 ### Test Setup
 
 ```python
@@ -426,7 +430,7 @@ while not HabHelpers.has_delegables(del_hby.db):
     doist.recur(deeds=wit_deeds + del_deeds + dgt_deeds)
 ```
 
-### Step 7: Generate did:webs DID Document
+### Step 7: Generate did:webs DID Document and verify delegation
 
 Once delegation is complete, generate the `did:webs` artifacts:
 
