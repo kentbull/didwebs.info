@@ -91,7 +91,7 @@ Try these working `did:webs` DIDs on the GLEIF testnet:
 did:webs:hook.testnet.gleif.org%3A7701:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye
 ```
 
-- **DID Document**: [https://hook.testnet.gleif.org:7702/dws/EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye/did.json](https://hook.testnet.gleif.org:7702/dws/EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye/did.json)
+- **DID Document**: [https://hook.testnet.gleif.org:7701/dws/EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye/did.json](https://hook.testnet.gleif.org:7701/dws/EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye/did.json)
 - **KERI Stream**: [https://hook.testnet.gleif.org:7702/dws/EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye/keri.cesr](https://hook.testnet.gleif.org:7702/dws/EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye/keri.cesr)
 - **Resolver**: [https://hook.testnet.gleif.org:7703/1.0/identifiers/did:webs:hook.testnet.gleif.org%3A7701:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye](https://hook.testnet.gleif.org:7703/1.0/identifiers/did:webs:hook.testnet.gleif.org%3A7701:dws:EM27ujhiBJA24Ns-XeTRRfQwfe5V9m7xW1nAvkdJk7Ye)
 
