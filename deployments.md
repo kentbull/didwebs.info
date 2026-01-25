@@ -57,7 +57,7 @@ curl -X GET "https://dev.uniresolver.io/1.0/identifiers/did:webs:hook.testnet.gl
 
 The Global Legal Entity Identifier Foundation (GLEIF) operates a `did:webs` testnet for development and testing.
 
-- **URL**: [https://hook.testnet.gleif.org:7703/](https://hook.testnet.gleif.org:7703/)
+- **URL**: `https://hook.testnet.gleif.org:7703`
 - **API Endpoint**: `https://hook.testnet.gleif.org:7703/1.0/identifiers/{did}`
 - **Status**: Testnet (for development and testing)
 - **Maintained by**: GLEIF
