@@ -11,7 +11,7 @@ A `did:webs` DID document is generated from the current key state of a KERI AID.
 3. Mapping KERI data to DID document properties
 4. Including witness and service information
 
-For the W3C ConditionalProof2022 context document see [this link](/context/ConditionalProof2022.jsonld.txt)
+For the W3C ConditionalProof2022 context document see [this link](https://didwebs.info/context/ConditionalProof2022.jsonld.txt)
 
 ## DID Document Structure
 
