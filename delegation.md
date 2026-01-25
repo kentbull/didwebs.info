@@ -691,7 +691,7 @@ Have a process for:
 - **Test Code**: [`test_resolving.py:44`](https://github.com/GLEIF-IT/did-webs-resolver/blob/main/tests/dws/core/test_resolving.py#L44)
 - **Implementation**: `src/dws/core/didding.py`
 - **Helper Functions**: `src/dws/core/oobiing.py`
-- **KERI Delegation**: [KERI Specification](https://trustoverip.github.io/tswg-keri-specification/)
+- **KERI Delegation**: [KERI Specification](https://trustoverip.github.io/kswg-keri-specification/)
 
 ## Next Steps
 

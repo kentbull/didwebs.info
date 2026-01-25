@@ -256,7 +256,7 @@ See the [Contributing Guide](contributing.md) for ways to contribute to:
 ### Where can I learn more about KERI?
 
 - **Website**: [keri.one](https://keri.one)
-- **Specification**: [KERI Spec](https://trustoverip.github.io/tswg-keri-specification/)
+- **Specification**: [KERI Spec](https://trustoverip.github.io/kswg-keri-specification/)
 - **GitHub**: [WebOfTrust](https://github.com/WebOfTrust)
 - **Papers**: [KERI White Paper](https://github.com/SmithSamuelM/Papers)
 

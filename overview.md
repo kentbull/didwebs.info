@@ -124,21 +124,21 @@ Example structure:
 
 ### did:webs vs did:web
 
-| Feature                       | did:web  | did:webs          |
-|-------------------------------|----------|-------------------|
-| Web-based publication         | ✅       | ✅                |
-| Simple HTTPS transformation   | ✅       | ✅                |
-| Cryptographic key history     | ❌       | ✅                |
-| Verifiable updates            | ❌       | ✅                |
-| Protection against compromise | ❌       | ✅ (pre-rotation) |
-| DID portability               | ❌       | ✅                |
-| Trust in web infrastructure   | Required | Not required      |
-| Additional file required      | None     | keri.cesr         |
+| Feature                       | did:web  | did:webs         |
+|-------------------------------|----------|------------------|
+| Web-based publication         | ✅        | ✅                |
+| Simple HTTPS transformation   | ✅        | ✅                |
+| Cryptographic key history     | ❌        | ✅                |
+| Verifiable updates            | ❌        | ✅                |
+| Protection against compromise | ❌        | ✅ (pre-rotation) |
+| DID portability               | ❌        | ✅                |
+| Trust in web infrastructure   | Required | Not required     |
+| Additional file required      | None     | keri.cesr        |
 
 ### did:webs vs Blockchain DIDs
 
-| Feature                   | Blockchain DIDs  | did:webs       |
-|---------------------------|------------------|----------------|
+| Feature                   | Blockchain DIDs | did:webs      |
+|---------------------------|-----------------|---------------|
 | Decentralized trust       | ✅               | ✅             |
 | Cryptographic security    | ✅               | ✅             |
 | Transaction costs         | ❌ (fees)        | ✅ (free)      |
