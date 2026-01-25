@@ -12,8 +12,8 @@ A JSON-LD context for Conditional Proof 2022.
 
 **Access URLs:**
 
-- **Local**: http://localhost:3000/sample-context-docs/ConditionalProof2022.jsonld
-- **GitHub Pages**: https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+- **Local**: http://localhost:3000/context/ConditionalProof2022.jsonld.txt
+- **GitHub Pages**: https://didwebs.info/context/ConditionalProof2022.jsonld.txt
 
 **Usage in code:**
 
@@ -21,7 +21,7 @@ A JSON-LD context for Conditional Proof 2022.
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld"
+    "https://didwebs.info/context/ConditionalProof2022.jsonld"
   ],
   "type": ["VerifiableCredential"],
   ...
@@ -32,10 +32,10 @@ A JSON-LD context for Conditional Proof 2022.
 
 ```bash
 # Download the context file
-curl -O https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+curl -O https://didwebs.info/context/ConditionalProof2022.jsonld
 
 # Or with wget
-wget https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+wget https://didwebs.info/context/ConditionalProof2022.jsonld
 ```
 
 ## Adding New Resources
@@ -45,7 +45,7 @@ To add new static resources:
 1. **Place files in appropriate directory**:
    ```bash
    # For JSON-LD contexts
-   cp my-context.jsonld sample-context-docs/
+   cp my-context.jsonld context/
    
    # For schemas
    mkdir -p static/schemas
@@ -54,14 +54,14 @@ To add new static resources:
 
 2. **Commit and push**:
    ```bash
-   git add sample-context-docs/
+   git add context/
    git commit -m "Add new context file"
    git push origin main
    ```
 
 3. **Access via URL**:
    ```
-   https://didwebs.info/sample-context-docs/my-context.jsonld
+   https://didwebs.info/context/my-context.jsonld
    ```
 
 ## MIME Types
@@ -89,7 +89,7 @@ GitHub Pages uses CDN caching:
 
 ```
 didwebs.info/
-├── sample-context-docs/     # JSON-LD contexts
+├── context/     # JSON-LD contexts
 │   └── ConditionalProof2022.jsonld
 ├── static/                   # Other static resources (optional)
 │   ├── schemas/             # JSON schemas
@@ -107,10 +107,10 @@ Test static file serving locally:
 ./serve.sh
 
 # Test JSON-LD context
-curl http://localhost:3000/sample-context-docs/ConditionalProof2022.jsonld
+curl http://localhost:3000/context/ConditionalProof2022.jsonld
 
 # Check MIME type
-curl -I http://localhost:3000/sample-context-docs/ConditionalProof2022.jsonld
+curl -I http://localhost:3000/context/ConditionalProof2022.jsonld
 ```
 
 ## Production URLs
@@ -118,7 +118,7 @@ curl -I http://localhost:3000/sample-context-docs/ConditionalProof2022.jsonld
 Once deployed, static resources are available at:
 
 ```
-https://didwebs.info/sample-context-docs/ConditionalProof2022.jsonld
+https://didwebs.info/context/ConditionalProof2022.jsonld
 ```
 
 These URLs can be used in:

@@ -24,5 +24,5 @@
   - [Source Code](source-code.md)
   - [FAQ](faq.md)
   - [Examples](examples.md)
-  - [Static Resources](sample-context-docs/README.md)
+  - [Static Resources](context/README.md)
   - [Contributing](contributing.md)
