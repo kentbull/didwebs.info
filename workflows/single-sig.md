@@ -822,10 +822,10 @@ View the complete script:
 
 ## Next Steps
 
-- [Delegation](delegation.md) - Learn about delegated identifiers
-- [Commands Reference](implementation/commands.md) - Detailed command documentation
-- [Quick Start](quickstart.md) - Docker-based quick start
-- [Examples](examples.md) - More workflow examples
+- [Delegation](../delegation.md) - Learn about delegated identifiers
+- [Commands Reference](../implementation/commands.md) - Detailed command documentation
+- [Quick Start](../quickstart.md) - Docker-based quick start
+- [Examples](../examples.md) - More workflow examples
 
 ## Summary
 

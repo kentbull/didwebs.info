@@ -2,6 +2,17 @@
 
 Live `did:webs` deployments you can use for testing and development.
 
+- [Universal Resolver](#universal-resolver): `https://dev.uniresolver.io/1.0/identifiers/{did}`
+  - example DID (should resolve today):
+    ```bash
+    curl -X GET https://dev.uniresolver.io/1.0/identifiers/did:webs:hook.testnet.gleif.org%3A7702:dws:ED1e8pD24aqd0dCZTQHaGpfcluPFD2ajGIY3ARgE5Yvr
+    ```
+- [GLEIF Testnet](#gleif-testnet): `https://hook.testnet.gleif.org:7703/1.0/identifiers/{did}`
+  - example DID (should resolve today):
+    ``bash
+    curl -X GET https://hook.testnet.gleif.org:7703/1.0/identifiers/did:webs:hook.testnet.gleif.org%3A7702:dws:ED1e8pD24aqd0dCZTQHaGpfcluPFD2ajGIY3ARgE5Yvr
+    ```
+
 ## Universal Resolver
 
 The [Universal Resolver](https://dev.uniresolver.io/) is a community-maintained DID resolution service that supports multiple DID methods, including `did:webs`.
