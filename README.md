@@ -412,7 +412,7 @@ And CESR stream for the sample did:webs DID Doc above is shown below with whites
 
 ## Learn More
 
-- **Specification Repository**: [tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+- **Specification Repository**: [kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)
 - **Reference Implementation**: [did-webs-resolver](https://github.com/GLEIF-IT/did-webs-resolver)
 - **KERI**: [keri.one](https://keri.one)
 - **Trust Over IP**: [trustoverip.org](https://trustoverip.org)

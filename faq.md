@@ -241,7 +241,7 @@ Use `did:webs` for web-scale, cost-effective identifiers.
 ### Where can I ask questions?
 
 - **GitHub Issues**: [did-webs-resolver](https://github.com/GLEIF-IT/did-webs-resolver/issues)
-- **Specification**: [tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification/issues)
+- **Specification**: [kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification/issues)
 - **KERI Community**: [WebOfTrust GitHub](https://github.com/WebOfTrust)
 
 ### How can I contribute?

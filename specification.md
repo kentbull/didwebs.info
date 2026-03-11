@@ -10,13 +10,13 @@ This document specifies a [DID Method](https://www.w3.org/TR/did-core/#methods),
 
 The complete, normative specification is maintained by the Trust Over IP Foundation:
 
-📄 **[View the Official Specification](https://trustoverip.github.io/tswg-did-method-webs-specification/)**
+📄 **[View the Official Specification](https://trustoverip.github.io/kswg-did-method-webs-specification/)**
 
 ## Specification Repository
 
 The specification source is available on GitHub:
 
-🔗 **[tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)**
+🔗 **[kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)**
 
 ## Key Sections
 
@@ -136,14 +136,14 @@ Additional resources:
 
 - **Status**: Draft
 - **Version**: Latest
-- **Last Updated**: Check the [specification repository](https://github.com/trustoverip/tswg-did-method-webs-specification) for current version
+- **Last Updated**: Check the [specification repository](https://github.com/trustoverip/kswg-did-method-webs-specification) for current version
 - **Working Group**: Trust Over IP Foundation - Technology Stack Working Group
 
 ## Contributing to the Specification
 
 The specification is developed openly by the Trust Over IP Foundation. To contribute:
 
-1. Review the [Contributing Guide](https://github.com/trustoverip/tswg-did-method-webs-specification/blob/main/Contributing.md)
+1. Review the [Contributing Guide](https://github.com/trustoverip/kswg-did-method-webs-specification/blob/main/Contributing.md)
 2. Join the [Trust Over IP Foundation](https://trustoverip.org/)
 3. Participate in working group meetings
 4. Submit issues or pull requests
@@ -199,12 +199,12 @@ Test your implementation against:
 
 - **GLEIF Testnet**: [Deployments](deployments.md)
 - **Universal Resolver**: [dev.uniresolver.io](https://dev.uniresolver.io/)
-- **Test Vectors**: Available in the [specification repository](https://github.com/trustoverip/tswg-did-method-webs-specification)
+- **Test Vectors**: Available in the [specification repository](https://github.com/trustoverip/kswg-did-method-webs-specification)
 
 ## Feedback
 
 Submit feedback on the specification:
 
-- **GitHub Issues**: [tswg-did-method-webs-specification/issues](https://github.com/trustoverip/tswg-did-method-webs-specification/issues)
+- **GitHub Issues**: [kswg-did-method-webs-specification/issues](https://github.com/trustoverip/kswg-did-method-webs-specification/issues)
 - **Mailing List**: Trust Over IP Foundation working groups
 - **Community**: [Trust Over IP](https://trustoverip.org/)

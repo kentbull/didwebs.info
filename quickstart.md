@@ -263,5 +263,5 @@ Now that you have a working `did:webs` DID:
 ### Get Help
 
 - **GitHub Issues**: [did-webs-resolver issues](https://github.com/GLEIF-IT/did-webs-resolver/issues)
-- **Specification**: [tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+- **Specification**: [kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)
 - **KERI Community**: [WebOfTrust GitHub](https://github.com/WebOfTrust)
