@@ -4,7 +4,7 @@ Links to all source code repositories for `did:webs`.
 
 ## Quick Links
 
-- did:webs spec: [https://github.com/trustoverip/tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+- did:webs spec: [https://github.com/trustoverip/kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)
 - did:webs reference implementation: [https://github.com/GLEIF-IT/did-webs-resolver](https://github.com/GLEIF-IT/did-webs-resolver)
 
 ## Official Specification
@@ -20,13 +20,13 @@ The official `did:webs` DID Method specification developed by the Trust Over IP 
 - **License**: [OWF Contributor License Agreement 1.0](https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owf-contributor-license-agreement-1-0-copyright) for the spec, [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) for the implementation code
 
 **Links:**
-- 📖 **Specification**: [https://trustoverip.github.io/tswg-did-method-webs-specification/](https://trustoverip.github.io/tswg-did-method-webs-specification/)
-- 📂 **Source Code**: [https://github.com/trustoverip/tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+- 📖 **Specification**: [https://trustoverip.github.io/kswg-did-method-webs-specification/](https://trustoverip.github.io/kswg-did-method-webs-specification/)
+- 📂 **Source Code**: [https://github.com/trustoverip/kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)
 
 
 **Contributing:**
-- [Contributing Guide](https://github.com/trustoverip/tswg-did-method-webs-specification/blob/main/Contributing.md)
-- [Editing the Spec](https://github.com/trustoverip/tswg-did-method-webs-specification/blob/main/EditingTheSpec.md)
+- [Contributing Guide](https://github.com/trustoverip/kswg-did-method-webs-specification/blob/main/Contributing.md)
+- [Editing the Spec](https://github.com/trustoverip/kswg-did-method-webs-specification/blob/main/EditingTheSpec.md)
 
 ---
 

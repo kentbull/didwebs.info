@@ -186,6 +186,6 @@ This starts a complete `did:webs` environment including:
 ## Additional Resources
 
 - **Reference Implementation**: [did-webs-resolver on GitHub](https://github.com/GLEIF-IT/did-webs-resolver)
-- **Specification**: [tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+- **Specification**: [kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)
 - **GLEIF**: [gleif.org](https://www.gleif.org/)
 - **Universal Resolver**: [dev.uniresolver.io](https://dev.uniresolver.io/)

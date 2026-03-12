@@ -15,7 +15,7 @@ Help improve the `did:webs` specification:
 - Report ambiguities or errors
 - Contribute use cases and examples
 
-**Repository**: [tswg-did-method-webs-specification](https://github.com/trustoverip/tswg-did-method-webs-specification)
+**Repository**: [kswg-did-method-webs-specification](https://github.com/trustoverip/kswg-did-method-webs-specification)
 
 ### 2. Reference Implementation
 
@@ -89,8 +89,8 @@ Before contributing, familiarize yourself with:
 **For Specification Work:**
 
 ```bash
-git clone https://github.com/trustoverip/tswg-did-method-webs-specification.git
-cd tswg-did-method-webs-specification
+git clone https://github.com/trustoverip/kswg-did-method-webs-specification.git
+cd kswg-did-method-webs-specification
 npm install
 npm run edit
 ```
